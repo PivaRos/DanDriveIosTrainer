@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D3995FB72CF9F87400CB3F91 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = D3995FB62CF9F87400CB3F91 /* SQLite */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D3995FA42CF9F75B00CB3F91 /* DataCollectorForTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataCollectorForTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3995FB72CF9F87400CB3F91 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = DataCollectorForTraining;
 			packageProductDependencies = (
+				D3995FB62CF9F87400CB3F91 /* SQLite */,
 			);
 			productName = DataCollectorForTraining;
 			productReference = D3995FA42CF9F75B00CB3F91 /* DataCollectorForTraining.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = D3995F9B2CF9F75B00CB3F91;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D3995FB52CF9F87400CB3F91 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D3995FA52CF9F75B00CB3F91 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3995FB52CF9F87400CB3F91 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3995FB62CF9F87400CB3F91 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3995FB52CF9F87400CB3F91 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D3995F9C2CF9F75B00CB3F91 /* Project object */;
 }
